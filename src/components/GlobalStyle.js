@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: #1b1b1b;
+    font-family: 'Oxygen', sans-serif;
   }
 
   button {

@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e88fd47-e192-48e6-aecb-dd02929a550b" name="Default Changelist" comment="Added about page and began styling">
-      <change afterPath="$PROJECT_DIR$/src/components/AboutSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ExperienceSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GlobalStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SkillsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/IMG_20190608_164411.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GlobalStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SkillsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SkillsSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +102,8 @@
       <workItem from="1614488246543" duration="688000" />
       <workItem from="1615843949286" duration="19000" />
       <workItem from="1615843994221" duration="8266000" />
-      <workItem from="1615871712738" duration="6005000" />
+      <workItem from="1615871712738" duration="8472000" />
+      <workItem from="1616028043824" duration="18961000" />
     </task>
     <task id="LOCAL-00001" summary="Added npm packages and cleaned up">
       <created>1613237480089</created>
@@ -135,6 +128,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />

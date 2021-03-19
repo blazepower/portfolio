@@ -80,6 +80,13 @@ const CardStyle = styled.div`
     display: flex;
     align-items: center;
   }
+  
+  h3 {
+    margin-left: 1rem;
+    background: white;
+    color: black;
+    padding: 1rem;
+  }
 `;
 
 export default SkillsSection;
