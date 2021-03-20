@@ -6,18 +6,19 @@ import {
   faJava,
   faPython,
   faReact,
-  faUnity,
 } from "@fortawesome/free-brands-svg-icons";
 import { Description, Layout } from "../styles";
 import styled from "styled-components";
+import { faTerminal } from "@fortawesome/free-solid-svg-icons";
 
-function Card({ Icon, Word }) {
+function Card({ Icon, Title, Content }) {
   return (
     <CardStyle>
       <div className="icon">
         <FontAwesomeIcon icon={Icon} size={"3x"} color={"#23d997"} />
-        <h3>{Word}</h3>
+        <h3>{Title}</h3>
       </div>
+      <p>{Content}</p>
     </CardStyle>
   );
 }
@@ -30,25 +31,37 @@ const SkillsSection = () => {
           Top <span>Skills</span>
         </h2>
         <Cards>
-          <Card Icon={faAngular} Word={"One year of experience with Angular"} />
+          <Card
+            Icon={faAngular}
+            Title={"Angular"}
+            Content={"One year of experience with Angular"}
+          />
           <Card
             Icon={faJava}
-            Word={"Four years of experience in Java and Spring Boot"}
+            Title={"Java"}
+            Content={"Four years of experience in Java and Spring Boot"}
           />
           <Card
             Icon={faAndroid}
-            Word={
-              "One year of experience with Android development using Java and Kotlin"
+            Title={"Android"}
+            Content={
+              "One year of experience with Android dev using Java and Kotlin"
             }
           />
           <Card
-            Icon={faUnity}
-            Word={"One year of experience using C#, .Net, and Unity"}
+            Icon={faTerminal}
+            Title={"C#"}
+            Content={"Two years of experience using C# and .Net"}
           />
-          <Card Icon={faReact} Word={"Two years of experience using ReactJS"} />
+          <Card
+            Icon={faReact}
+            Title={"React"}
+            Content={"Two years of experience using ReactJS"}
+          />
           <Card
             Icon={faPython}
-            Word={"Three years of experience with Python"}
+            Title={"Python"}
+            Content={"Three years of experience with Python"}
           />
         </Cards>
       </Description>
@@ -75,17 +88,23 @@ const Cards = styled.div`
 
 const CardStyle = styled.div`
   flex-basis: 20rem;
+  margin-right: 1rem;
 
   .icon {
     display: flex;
     align-items: center;
   }
-  
+
   h3 {
+    font-size: 1.5rem;
     margin-left: 1rem;
     background: white;
     color: black;
     padding: 1rem;
+  }
+  
+  p {
+    font-size: 1.3rem;
   }
 `;
 

@@ -32,10 +32,19 @@ const GlobalStyle = createGlobalStyle`
     font-weight: lighter;
     font-size: 4rem;
   }
+  
+  h3 {
+    font-size: 2rem;
+  }
 
   h4 {
     font-weight: bold;
     color: white;
+    font-size: 1.7rem
+  }
+  
+  h5 {
+    font-size: 1.5rem
   }
 
   span {
@@ -57,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.4rem;
   }
 
-  pre {
+  p {
     padding: 3rem 0;
     color: #ccc;
     font-size: 1.4rem;
