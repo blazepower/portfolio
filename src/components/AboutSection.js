@@ -37,7 +37,6 @@ const AboutSection = () => {
 
 const ProfilePic = styled(Image)`
   flex: 1;
-  background-size: contain;
   width: 20vw;
   height: 40vh;
   transform: translateY(-15vh);
@@ -45,7 +44,6 @@ const ProfilePic = styled(Image)`
 
   img {
     width: 100%;
-    height: auto;
   }
 `;
 

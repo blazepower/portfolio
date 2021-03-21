@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const NavElement = ({ Text }) => {
+const NavElement = ({ Text, Target }) => {
   return (
     <li>
-      <a href={"#"}>{Text}</a>
+      <Link to={Target}>{Text}</Link>
     </li>
   );
 };
@@ -13,14 +14,14 @@ const Nav = () => {
   return (
     <NavStyle>
       <h1>
-        <a id={"logo"} href="#">
+        <Link id={"logo"} to="/">
           Rishik
-        </a>
+        </Link>
       </h1>
       <ul>
-        <NavElement Text={"About Me"} />
-        <NavElement Text={"My Projects"} />
-        <NavElement Text={"Contact Me"} />
+        <NavElement Target={"/"} Text={"About Me"} />
+        <NavElement Target={"/projects"} Text={"My Projects"} />
+        <NavElement Target={"/contact"} Text={"Contact Me"} />
       </ul>
     </NavStyle>
   );
@@ -50,7 +51,6 @@ const NavStyle = styled.nav`
     display: flex;
     list-style: none;
   }
-
   li {
     padding-right: 5rem;
     position: relative;
