@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Layout } from "../styles";
 import { AnimateSharedLayout, motion } from "framer-motion";
+import { useScroll } from "../hooks/useScroll";
+import { scrollReveal } from "../animation";
 
 const ExperienceCard = ({ cardHeader, cardDate, cardContent }) => {
   const [expToggle, setExpToggle] = useState(false);
@@ -22,8 +24,14 @@ const ExperienceCard = ({ cardHeader, cardDate, cardContent }) => {
 };
 
 const ExperienceSection = () => {
+  const [element, inView] = useScroll();
   return (
-    <Experience>
+    <Experience
+      ref={element}
+      variants={scrollReveal}
+      animate={inView ? "show" : "hidden"}
+      initial={"hidden"}
+    >
       <h2>My Experience</h2>
       <motion.h3 layout>
         <span>Education</span>

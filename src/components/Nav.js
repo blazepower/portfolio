@@ -35,6 +35,9 @@ const NavStyle = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   #logo {
     font-size: 1.7rem;

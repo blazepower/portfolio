@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   pageAnimation,
   fade,
@@ -21,8 +21,16 @@ import player from "../resources/music_player.png";
 import swag from "../resources/swagai.png";
 import neveralone from "../resources/neveralone.png";
 import tweets from "../resources/Tweet_data.png";
+import { useScroll } from "../hooks/useScroll";
+import ScrollRestore from "../components/ScrollRestore";
 
 const Projects = () => {
+  const [element1, inView1] = useScroll();
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
+  const [element5, controls5] = useScroll();
+  const [element6, controls6] = useScroll();
   return (
     <ProjectsStyle
       variants={pageAnimation}
@@ -41,6 +49,7 @@ const Projects = () => {
         Projects
       </motion.h1>
       {/* #Todo: Extract into its own component */}
+      {/* #Todo: Add more animations */}
       <Project>
         <motion.h2 variants={fade}>React Music Player</motion.h2>
         <motion.div variants={lineAnim} className={"line"} />
@@ -58,44 +67,66 @@ const Projects = () => {
         <h2>Intelliquote</h2>
         <motion.div className={"line"} />
         <Link to={"/project/intelliquote"}>
-          <img src={intelliquote} alt={"Intelliquote"} />
+          <Hide>
+            <motion.img src={intelliquote} alt={"Intelliquote"} />
+          </Hide>
         </Link>
       </Project>
-      <Project>
-        <h2>SwagAI</h2>
-        <motion.div className={"line"} />
-        <Link to={"/project/swag"}>
-          <img src={swag} alt={"SwagAI"} />
-        </Link>
-      </Project>
-      <Project>
-        <h2>NeverAlone</h2>
-        <motion.div className={"line"} />
-        <Link to={"/project/neveralone"}>
-          <img src={neveralone} alt={"NeverAlone"} />
-        </Link>
-      </Project>
-      <Project>
-        <h2>Bot-o-Matic</h2>
-        <motion.div className={"line"} />
-        <Link to={"/project/botmatic"}>
-          <img src={bot} alt={"bot-o-matic"} />
-        </Link>
-      </Project>
-      <Project>
-        <h2>Florist Frenzy</h2>
-        <motion.div className={"line"} />
-        <Link to={"/project/florist"}>
-          <img src={florist} alt={"Florist Frenzy"} />
-        </Link>
-      </Project>
-      <Project>
-        <h2>MURL</h2>
-        <motion.div className={"line"} />
-        <Link to={"/project/murl"}>
-          <img src={murl} alt={"MURL"} />
-        </Link>
-      </Project>
+      <Hide>
+        <Project>
+          <h2>SwagAI</h2>
+          <motion.div className={"line"} />
+          <Link to={"/project/swag"}>
+            <Hide>
+              <motion.img src={swag} alt={"SwagAI"} />
+            </Hide>
+          </Link>
+        </Project>
+      </Hide>
+      <Hide>
+        <Project>
+          <h2>NeverAlone</h2>
+          <motion.div className={"line"} />
+          <Link to={"/project/neveralone"}>
+            <Hide>
+              <motion.img src={neveralone} alt={"NeverAlone"} />
+            </Hide>
+          </Link>
+        </Project>
+      </Hide>
+      <Hide>
+        <Project>
+          <h2>Bot-o-Matic</h2>
+          <motion.div className={"line"} />
+          <Link to={"/project/botmatic"}>
+            <Hide>
+              <motion.img src={bot} alt={"bot-o-matic"} />
+            </Hide>
+          </Link>
+        </Project>
+      </Hide>
+      <Hide>
+        <Project>
+          <h2>Florist Frenzy</h2>
+          <motion.div className={"line"} />
+          <Link to={"/project/florist"}>
+            <Hide>
+              <motion.img src={florist} alt={"Florist Frenzy"} />
+            </Hide>
+          </Link>
+        </Project>
+      </Hide>
+      <Hide>
+        <Project>
+          <h2>MURL</h2>
+          <motion.div className={"line"} />
+          <Link to={"/project/murl"}>
+            <Hide>
+              <motion.img src={murl} alt={"MURL"} />
+            </Hide>
+          </Link>
+        </Project>
+      </Hide>
     </ProjectsStyle>
   );
 };
@@ -110,7 +141,7 @@ const ProjectsStyle = styled(motion.div)`
   }
 `;
 
-const Project = styled.div`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
 
   h2 {

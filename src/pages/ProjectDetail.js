@@ -68,7 +68,7 @@ const Headline = styled.div`
   img {
     padding-top: 1rem;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     object-fit: cover;
   }
 `;

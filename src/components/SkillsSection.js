@@ -10,6 +10,8 @@ import {
 import { Description, Layout } from "../styles";
 import styled from "styled-components";
 import { faTerminal } from "@fortawesome/free-solid-svg-icons";
+import { useScroll } from "../hooks/useScroll";
+import { fade, scrollReveal } from "../animation";
 
 function Card({ Icon, Title, Content }) {
   return (
@@ -24,8 +26,14 @@ function Card({ Icon, Title, Content }) {
 }
 
 const SkillsSection = () => {
+  const [element, inView] = useScroll();
   return (
-    <Skills>
+    <Skills
+      variants={scrollReveal}
+      animate={inView ? "show" : "hidden"}
+      initial={"hidden"}
+      ref={element}
+    >
       <Description>
         <h2>
           Top <span>Skills</span>
@@ -102,7 +110,7 @@ const CardStyle = styled.div`
     color: black;
     padding: 1rem;
   }
-  
+
   p {
     font-size: 1.3rem;
   }

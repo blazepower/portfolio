@@ -16,7 +16,6 @@ export const pageAnimation = {
 
   exit: {
     opacity: 0,
-    // y: 300,
     x: -300,
     transition: {
       duration: 0.5,
@@ -76,4 +75,15 @@ export const flowEffect = {
 export const frameContainer = {
   hidden: { opacity: 1 },
   show: { opacity: 1, transition: { staggerChildren: 0.2, ease: "easeOut" } },
+};
+
+export const scrollReveal = {
+  hidden: { opacity: 0, scale: 1.2, transition: { duration: 0.5 } },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };

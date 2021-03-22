@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetail";
 import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import ScrollRestore from "./components/ScrollRestore";
 
 function App() {
   const loc = useLocation();
@@ -14,6 +15,7 @@ function App() {
     <div className={"App"}>
       <GlobalStyle />
       <Nav />
+      <ScrollRestore />
       <AnimatePresence exitBeforeEnter>
         <Switch location={loc} key={loc.pathname}>
           <Route path={"/"} exact>
