@@ -71,6 +71,13 @@ const Headline = styled.div`
     height: 60vh;
     object-fit: cover;
   }
+
+  @media (max-width: 1300px) {
+    h2 {
+      position: relative;
+      text-align: center;
+    }
+  }
 `;
 
 const Descrip = styled.div`
@@ -79,6 +86,14 @@ const Descrip = styled.div`
   margin: 5rem 10rem;
   align-items: stretch;
   justify-content: space-around;
+
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1rem;
+    align-items: center;
+    min-height: 40vh;
+  }
 `;
 
 const DescripStyle = styled.div`
@@ -93,6 +108,10 @@ const DescripStyle = styled.div`
     background: #23d997;
     height: 0.5rem;
     margin: 1rem 0;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 2rem;
   }
 `;
 

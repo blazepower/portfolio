@@ -29,31 +29,16 @@ const AboutSection = () => {
         </motion.p>
         <motion.button variants={fade}>Contact Me!</motion.button>
       </Description>
-      <ProfilePic>
+      <Image>
         <motion.img
           variants={portraitAnim}
           src={portrait}
           alt="Picture of Me!"
         />
-      </ProfilePic>
+      </Image>
       <Wave />
     </Layout>
   );
 };
-
-// Styled Components
-
-const ProfilePic = styled(Image)`
-  flex: 1;
-  width: 20vw;
-  height: 40vh;
-  transform: translateY(-15vh);
-  overflow: visible;
-
-  img {
-    width: 100%;
-    z-index: 2;
-  }
-`;
 
 export default AboutSection;
