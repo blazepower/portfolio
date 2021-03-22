@@ -2,33 +2,41 @@ import React from "react";
 import styled from "styled-components";
 import portrait from "../resources/IMG_20190608_164411.jpg";
 import { Description, Hide, Image, Layout } from "../styles";
+import { motion } from "framer-motion";
+import { fade, portraitAnim, titleAnim } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
     <Layout>
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h1>Hello!</h1>
+            <motion.h2 variants={titleAnim}>Hello!</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               My name is <span>Rishik</span>!
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>Welcome to my page</h2>
+            <motion.h2 variants={titleAnim}>Welcome to my page</motion.h2>
           </Hide>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p variants={fade}>
           I am currently looking for full time Software Engineering
           Opportunities beginning in the Spring of 2022!
-        </p>
-        <button>Contact Me!</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Me!</motion.button>
       </Description>
       <ProfilePic>
-        <img src={portrait} alt="Picture of Me!" />
+        <motion.img
+          variants={portraitAnim}
+          src={portrait}
+          alt="Picture of Me!"
+        />
       </ProfilePic>
+      <Wave />
     </Layout>
   );
 };
@@ -44,6 +52,7 @@ const ProfilePic = styled(Image)`
 
   img {
     width: 100%;
+    z-index: 2;
   }
 `;
 

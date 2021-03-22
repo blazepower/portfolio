@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e88fd47-e192-48e6-aecb-dd02929a550b" name="Default Changelist" comment="Added about page and began styling">
-      <change afterPath="$PROJECT_DIR$/src/TempState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/ProjectDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Projects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/FloristFrenzy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Functions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Intelliquote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Tweet_data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/botomatic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/murlLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/music_player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/neveralone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/swagai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Wave.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExperienceSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExperienceSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +117,8 @@
       <workItem from="1616266427380" duration="5000" />
       <workItem from="1616267538346" duration="11000" />
       <workItem from="1616275620285" duration="8695000" />
-      <workItem from="1616300185086" duration="7200000" />
+      <workItem from="1616300185086" duration="12766000" />
+      <workItem from="1616375767796" duration="3883000" />
     </task>
     <task id="LOCAL-00001" summary="Added npm packages and cleaned up">
       <created>1613237480089</created>
