@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -18,9 +20,15 @@ const Contact = () => {
       </Title>
       <div>
         <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send Me A Message</h2>
+          <Social
+            variants={titleAnim}
+            href={"http://www.linkedin.com/in/~rishik"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size={"4x"} color={"#0072b1"} />
+            {/*<Circle />*/}
+            <h2>Connect with me on LinkedIn!</h2>
           </Social>
         </Hide>
       </div>
@@ -41,7 +49,7 @@ const ContactStyle = styled(motion.div)`
 
 const Title = styled.div`
   margin-bottom: 4rem;
-  color: black;
+  color: white;
 
   @media (max-width: 1300px) {
     margin-top: 5rem;
@@ -51,9 +59,14 @@ const Title = styled.div`
 const Hide = styled.div`
   overflow: hidden;
 `;
-const Social = styled(motion.div)`
+const Social = styled(motion.a)`
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: #2b2b2b;
+  padding: 1rem;
+  border-radius: 25px;
 
   h2 {
     margin: 2rem;

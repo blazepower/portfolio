@@ -11,7 +11,7 @@ import { Description, Layout } from "../styles";
 import styled from "styled-components";
 import { faTerminal } from "@fortawesome/free-solid-svg-icons";
 import { useScroll } from "../hooks/useScroll";
-import { fade, scrollReveal } from "../animation";
+import { scrollReveal } from "../animation";
 
 function Card({ Icon, Title, Content }) {
   return (
