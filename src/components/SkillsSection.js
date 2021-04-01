@@ -93,6 +93,9 @@ const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
 
+  &:hover {
+  }
+
   @media (max-width: 1300px) {
     justify-content: center;
   }

@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Contact = () => {
   return (
@@ -22,13 +27,51 @@ const Contact = () => {
         <Hide>
           <Social
             variants={titleAnim}
+            href={"mailto:hombalrishik@gmail.com"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} size={"4x"} color={"#BB001B"} />
+            <h2>hombalrishik@gmail.com</h2>
+          </Social>
+        </Hide>
+      </div>
+      <div>
+        <Hide>
+          <Social
+            variants={titleAnim}
             href={"http://www.linkedin.com/in/~rishik"}
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} size={"4x"} color={"#0072b1"} />
-            {/*<Circle />*/}
             <h2>Connect with me on LinkedIn!</h2>
+          </Social>
+        </Hide>
+      </div>
+      <div>
+        <Hide>
+          <Social
+            variants={titleAnim}
+            href={"https://github.com/blazepower"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size={"4x"} color={"white"} />
+            <h2>Check out my Github!</h2>
+          </Social>
+        </Hide>
+      </div>
+      <div>
+        <Hide>
+          <Social
+            variants={titleAnim}
+            href={"https://www.instagram.com/rishik_hombal/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} size={"4x"} color={"#833AB4"} />
+            <h2>Follow me on Instagram!</h2>
           </Social>
         </Hide>
       </div>
@@ -42,6 +85,7 @@ const ContactStyle = styled(motion.div)`
   min-height: 90vh;
 
   @media (max-width: 1300px) {
+    margin-top: 1rem;
     padding: 2rem;
     font-size: 1rem;
   }
@@ -67,17 +111,12 @@ const Social = styled(motion.a)`
   background-color: #2b2b2b;
   padding: 1rem;
   border-radius: 25px;
+  margin-bottom: 1.5rem;
 
   h2 {
     margin: 2rem;
+    text-align: center;
   }
-`;
-
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
 `;
 
 export default Contact;
