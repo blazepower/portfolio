@@ -2,14 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAndroid,
-  faAngular,
+  faAngular, faDocker,
   faJava,
   faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { Description, Layout } from "../styles";
 import styled from "styled-components";
-import { faTerminal } from "@fortawesome/free-solid-svg-icons";
+import { faCloud, faTerminal } from "@fortawesome/free-solid-svg-icons";
 import { useScroll } from "../hooks/useScroll";
 import { scrollReveal } from "../animation";
 
@@ -42,12 +42,12 @@ const SkillsSection = () => {
           <Card
             Icon={faAngular}
             Title={"Angular"}
-            Content={"One year of experience with Angular"}
+            Content={"Two years of experience with Angular"}
           />
           <Card
             Icon={faJava}
             Title={"Java"}
-            Content={"Four years of experience in Java and Spring Boot"}
+            Content={"Five years of experience in Java and Spring Boot"}
           />
           <Card
             Icon={faAndroid}
@@ -59,17 +59,27 @@ const SkillsSection = () => {
           <Card
             Icon={faTerminal}
             Title={"C#"}
-            Content={"Two years of experience using C# and .Net"}
+            Content={"Three years of experience using C# and .Net"}
           />
           <Card
             Icon={faReact}
             Title={"React"}
-            Content={"Two years of experience using ReactJS"}
+            Content={"Three years of experience using React"}
           />
           <Card
             Icon={faPython}
             Title={"Python"}
             Content={"Three years of experience with Python"}
+          />
+          <Card
+            Icon={faDocker}
+            Title={"Docker"}
+            Content={"One year of experience with Docker and Kubernetes"}
+          />
+          <Card
+            Icon={faCloud}
+            Title={"Go"}
+            Content={"One year of experience with Go"}
           />
         </Cards>
       </Description>

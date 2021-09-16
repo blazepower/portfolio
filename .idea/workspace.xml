@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e88fd47-e192-48e6-aecb-dd02929a550b" name="Default Changelist" comment="Added about page and began styling">
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExperienceSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExperienceSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SkillsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SkillsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +52,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\homba\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Users\homba\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\211.7442.26\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -126,6 +118,8 @@
       <workItem from="1616452095272" duration="755000" />
       <workItem from="1617244821708" duration="1755000" />
       <workItem from="1617246947562" duration="3335000" />
+      <workItem from="1631816953316" duration="24000" />
+      <workItem from="1631816987254" duration="3060000" />
     </task>
     <task id="LOCAL-00001" summary="Added npm packages and cleaned up">
       <created>1613237480089</created>

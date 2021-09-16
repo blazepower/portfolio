@@ -7,8 +7,9 @@ import { scrollReveal } from "../animation";
 
 const ExperienceCard = ({ cardHeader, cardDate, cardContent }) => {
   const [expToggle, setExpToggle] = useState(false);
+  const [expHover, setExpHover] = useState(false);
   return (
-    <Drop layout>
+    <Drop layout whileHover={{ scale: 1.05 }}>
       <div onClick={() => setExpToggle(!expToggle)} className={"card-title"}>
         <motion.h4 layout>{cardHeader}</motion.h4>
         <motion.h5 layout>{cardDate}</motion.h5>
@@ -59,17 +60,17 @@ const ExperienceSection = () => {
         <br />
         <ExperienceCard
           cardHeader={"Microsoft Azure"}
-          cardDate={"2021"}
+          cardDate={"Summer 2021"}
           cardContent={
-            "Intern on the Azure Compute Team for Summer 2021 \n" +
-            "More to come"
+            "Worked to enable companies to embrace the hybrid cloud model as a member of the Azure Arc Enabled Kubernetes Team \n" +
+            "Planned, designed, implemented, deployed, and tested a notification model to apply FluxV2 Configurations to Arc Enabled Kubernetes clusters reducing wasted compute by over 350% and increasing application speed by 90% using C# & Golang"
           }
         />
         <ExperienceCard
           cardHeader={"Altec Inc."}
-          cardDate={"2020 - 2021"}
+          cardDate={"2020 - Present"}
           cardContent={
-            "PIT Bandicoots (Fall 2020 - Summer 2021): \n\n" +
+            "PIT Bandicoots: \n" +
             'Developed and deployed the final phase of the "Configurable Checksheets" application leading to over $2.1 million added benefit to the business \n' +
             "\t-Configurable Checksheets allowed factory associates easy access to the instructions and customer requests for the development of custom utility trucks \n" +
             "Developed and deployed the initial deliverable for the Audit Application leading to over $800 thousand added benefit for the business \n" +
@@ -78,9 +79,9 @@ const ExperienceSection = () => {
         />
         <ExperienceCard
           cardHeader={"Altec Inc."}
-          cardDate={"2020 - 2021"}
+          cardDate={"Summer 2020"}
           cardContent={
-            "IS Intern Team (Summer 2020): \n\n" +
+            "IS Intern Team: \n" +
             "Created and deployed an application allowing all company associates to view basic information about any build job \n" +
             "Designed and implemented an interface for a new company-wide system for the storage and management of high quality photographs"
           }
@@ -121,13 +122,14 @@ const Experience = styled(Layout)`
 
 const Drop = styled(motion.div)`
   .card-title {
-    padding: 3rem 0;
+    padding: 0.2rem 0;
     cursor: pointer;
     user-select: none;
   }
 
   .drop-content {
-    padding: 2rem 0;
+    padding: 0.2rem 0;
+    background: rgba(27, 27, 27, 0.86);
 
     p {
       padding: 0.5rem 0;
