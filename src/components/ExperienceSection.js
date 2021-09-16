@@ -88,7 +88,7 @@ const ExperienceSection = () => {
         />
         <ExperienceCard
           cardHeader={"Breakthrough Electrolytes for Energy Storage"}
-          cardDate={"2020 - 2021"}
+          cardDate={"2020 - Present"}
           cardContent={
             "Maintained and update the webpage for the BEES EFRC \n" +
             "\t-Increased traffic from 100 views to over 2000 views per month \n" +
