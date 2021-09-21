@@ -1,15 +1,35 @@
 import React from "react";
 import About from "./pages/About";
 import GlobalStyle from "./components/GlobalStyle";
-import Nav from "./components/Nav";
+import Nav from "./components/nav/Nav";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetail";
-import { Redirect, Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import ScrollRestore from "./components/ScrollRestore";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faAndroid,
+  faAngular,
+  faDocker,
+  faJava,
+  faPython,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCloud, faTerminal } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
+  library.add(
+    faAndroid,
+    faAngular,
+    faDocker,
+    faJava,
+    faPython,
+    faReact,
+    faCloud,
+    faTerminal
+  );
   const loc = useLocation();
   return (
     <div className={"App"}>

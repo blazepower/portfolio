@@ -1,41 +1,7 @@
-import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 
-const NavElement = ({ Text, Target }) => {
-  const { pathname } = useLocation();
-  return (
-    <li>
-      <Link to={Target}>{Text}</Link>
-      <Line
-        transition={{ duration: 0.75 }}
-        initial={{ width: "0" }}
-        animate={{ width: pathname === Target ? "50%" : "0%" }}
-      />
-    </li>
-  );
-};
-
-const Nav = () => {
-  return (
-    <NavStyle>
-      <h1>
-        <Link id={"logo"} to="/">
-          Rishik
-        </Link>
-      </h1>
-      <ul>
-        <NavElement Target={"/"} Text={"About Me"} />
-        <NavElement Target={"/projects"} Text={"My Projects"} />
-        <NavElement Target={"/contact"} Text={"Contact Me"} />
-      </ul>
-    </NavStyle>
-  );
-};
-
-const NavStyle = styled.nav`
+export const NavStyle = styled.nav`
   min-height: 10vh;
   display: flex;
   margin: auto;
@@ -62,6 +28,7 @@ const NavStyle = styled.nav`
     display: flex;
     list-style: none;
   }
+
   li {
     padding-left: 10rem;
     position: relative;
@@ -88,7 +55,7 @@ const NavStyle = styled.nav`
   }
 `;
 
-const Line = styled(motion.div)`
+export const Line = styled(motion.div)`
   height: 0.3rem;
   background: #23d997;
   width: 0;
@@ -99,5 +66,3 @@ const Line = styled(motion.div)`
     left: 0;
   }
 `;
-
-export default Nav;
