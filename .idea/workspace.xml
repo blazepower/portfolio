@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e88fd47-e192-48e6-aecb-dd02929a550b" name="Default Changelist" comment="Added about page and began styling">
-      <change afterPath="$PROJECT_DIR$/src/actions/infoActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/experience/ExperienceSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/experience/ExperienceSectionStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/nav/NavStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/skills/SkillsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/skills/SkillsSectionStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/infoReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExperienceSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SkillsSection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +121,8 @@
       <workItem from="1631816953316" duration="24000" />
       <workItem from="1631816987254" duration="8458000" />
       <workItem from="1631888961046" duration="5404000" />
-      <workItem from="1632159936940" duration="10496000" />
+      <workItem from="1632159936940" duration="11550000" />
+      <workItem from="1632275926303" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="Added npm packages and cleaned up">
       <created>1613237480089</created>

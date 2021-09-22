@@ -1,4 +1,5 @@
-export const getAllExperience = "http://localhost:1000/experience";
-export const getAllEducation = "http://localhost:1000/education";
-export const getAllProjects = "http://localhost:1000/projects";
-export const getAllSkills = "http://localhost:1000/skills";
+const baseURL = "https://rishik.xyz";
+export const getAllExperience = `${baseURL}/experience`;
+export const getAllEducation = `${baseURL}/education`;
+export const getAllProjects = `${baseURL}/projects`;
+export const getAllSkills = `${baseURL}/skills`;
