@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e88fd47-e192-48e6-aecb-dd02929a550b" name="Default Changelist" comment="Added about page and began styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,9 @@
       <recent name="C:\Users\homba\Documents\My Code Misc\WebDev\React\portfolio\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\portfolio\src\components\nav" />
+      <recent name="C:\Programming\portfolio\src\components\skills" />
+      <recent name="C:\Programming\portfolio\src\components\experience" />
       <recent name="C:\Users\homba\Documents\My Code Misc\WebDev\React\portfolio\src\resources" />
     </key>
   </component>
@@ -117,7 +119,10 @@
       <workItem from="1617244821708" duration="1755000" />
       <workItem from="1617246947562" duration="3335000" />
       <workItem from="1631816953316" duration="24000" />
-      <workItem from="1631816987254" duration="6698000" />
+      <workItem from="1631816987254" duration="8458000" />
+      <workItem from="1631888961046" duration="5404000" />
+      <workItem from="1632159936940" duration="11550000" />
+      <workItem from="1632275926303" duration="756000" />
     </task>
     <task id="LOCAL-00001" summary="Added npm packages and cleaned up">
       <created>1613237480089</created>
